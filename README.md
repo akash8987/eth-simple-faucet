@@ -1,2 +1,19 @@
-# eth-simple-faucet
-A lightweight, flat-structure Solidity project implementing an ERC-20 Token Faucet. This dApp allows users to mint custom tokens and request a fixed amount with a configurable cooldown period (Time-Lock), ideal for testing and community distribution.
+# ETH Simple Faucet
+
+A decentralized faucet application built on Ethereum. This project deploys a custom ERC-20 token and a Faucet smart contract that dispenses tokens to users with a time-lock mechanism to prevent abuse.
+
+## Features
+- **Custom ERC-20 Token:** Built using OpenZeppelin standards.
+- **Time-Lock Mechanism:** Users can only claim tokens once every 24 hours (configurable).
+- **Owner Controls:** The owner can replenish the faucet or adjust the drip amount.
+
+## Tech Stack
+- Solidity ^0.8.19
+- Hardhat (configured for flat structure)
+- Ethers.js
+
+## Installation
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
